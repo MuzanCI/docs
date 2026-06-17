@@ -1,0 +1,24 @@
+{
+  "name": "muzanci-docs",
+  "version": "1.0.0",
+  "description": "Use the starter kit to get your docs deployed and ready to customize.",
+  "homepage": "https://github.com/MuzanCI/docs#readme",
+  "bugs": {
+    "url": "https://github.com/MuzanCI/docs/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MuzanCI/docs.git"
+  },
+  "license": "BSD-3-Clause",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "mint dev",
+    "update": "mint update"
+  },
+  "dependencies": {
+    "mint": "^4.2.622"
+  }
+}

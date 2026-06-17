@@ -1,72 +1,111 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "linden",
+  "name": "MuzanCI",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#ef4444",
+    "dark": "#b91c1c",
+    "light": "#fca5a5"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/images/logo.png",
+    "dark": "/images/logo.png"
+  },
+  "banner": {
+    "content": "Muzan CI is free for public repositories. [Learn more about limits](/limits)"
+  },
   "navigation": {
-    "pages": [
+    "tabs": [
       {
-        "group": "Getting Started",
+        "tab": "Docs",
         "pages": [
           "index",
-          "quickstart"
+          "install-on-github",
+          {
+            "group": "How it works",
+            "pages": [
+              "how-it-works/overview",
+              "how-it-works/pipelines",
+              "how-it-works/images",
+              "how-it-works/rules",
+              "how-it-works/jobs",
+              "how-it-works/envvars-and-secrets",
+              "how-it-works/artifacts",
+              "how-it-works/cache",
+              "how-it-works/ssh-access",
+              "how-it-works/managed-runners",
+              "how-it-works/self-hosted-runners"
+            ]
+          },
+          {
+            "group": "Examples",
+            "pages": [
+              "examples/hello-world",
+              "examples/rules",
+              "examples/jobs",
+              "examples/envvars-and-secrets",
+              "examples/artifacts",
+              "examples/cache",
+              "examples/managed-runners",
+              "examples/self-hosted-runners"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Blog",
+        "pages": [
+          "blog"
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/logo.png",
+    "dark": "/images/logo.png"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Get Help",
+      "href": "https://github.com/MuzanCI/feedback/issues/new"
     }
-  },
-  "contextual": {
-    "options": [
-      "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
-    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "github": "https://github.com/MuzanCI/feedback/issues/new",
+      "discord": "https://discord.gg/6VY5xRXV2"
+    },
+    "links": [
+      {
+        "header": "Links",
+        "items": [
+          {
+            "label": "Terms of Use",
+            "href": "/terms-of-use"
+          },
+          {
+            "label": "Privacy Policy",
+            "href": "/privacy-policy"
+          }
+        ]
+      }
+    ]
+  },
+  "description": "FreeBSD and Linux CI runners",
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  },
+  "interaction": {
+    "drilldown": true
+  },
+  "errors": {
+    "404": {
+      "redirect": false,
+      "description": "The URL that you were looking for does not exist. Please check your URL or [go back to home](https://muzanci.com/)"
     }
+  },
+  "icons": {
+    "library": "lucide"
   }
 }
